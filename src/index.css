@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background-primary: #0a1f18; /* Dark green background */
+  --color-card-background: #1a2e28;
+  --color-accent-green: #2d6a4f;
+  --color-accent-white: #ffffff;
+}
+
+.theme-light {
+  --color-background-primary: #f0f7f4;
+  --color-card-background: #ffffff;
+  --color-accent-green: #2d6a4f;
+  --color-accent-white: #0a1f18;
+}
+
+.bg-realism {
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(255, 255, 255, 0.03) 0px, transparent 50%),
+    radial-gradient(circle at 80% 30%, rgba(255, 255, 255, 0.02) 0px, transparent 50%),
+    radial-gradient(circle at 40% 70%, rgba(255, 255, 255, 0.02) 0px, transparent 50%);
+}
+
+body {
+  background-color: var(--color-background-primary);
+  color: var(--color-accent-white);
+}
